@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: cimg/golang:1.18.0
+      - image: cimg/golang:1.17.4
     steps:
       - checkout
       - restore_cache:
