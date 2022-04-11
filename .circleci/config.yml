@@ -4,6 +4,9 @@ jobs:
     working_directory: ~/repo
     docker:
       - image: cimg/golang:1.17.4
+        auth:
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - restore_cache:
